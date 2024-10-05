@@ -1,0 +1,111 @@
+.caption {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  color: white;
+
+  p {
+    width: 125px;
+    text-align: center;
+  }
+}
+
+.btn-group {
+  display: flex;
+  position: absolute;
+  top: 0;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 100%;
+  gap: 0.5rem;
+  fill: white;
+}
+
+.caption button,
+.btn-group button,
+.btn-group a {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: color 0.1s ease;
+  fill: white;
+
+  &:hover {
+    fill: gainsboro;
+  }
+}
+
+#info-panel{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  margin: 2rem;
+  justify-content: left;
+  width: 100%;
+  gap: 2rem;
+  color: white;
+
+  table {
+    text-align: left;
+    font-size: 1.2vh;
+    width: 30vw;
+  }
+}
+
+#btn-github {
+  display: inline-block;
+}
+
+.row{
+  display: flex;
+  padding: 10px 20px;
+}
+
+input{
+  flex: 1;
+  height: 30px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  color: white;
+}
+
+button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .fa-solid{
+  width: 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.result-box ul{
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+
+.result-box ul li{
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.result-box ul li:hover{
+  background: grey;
+}
+
+.result-box{
+  max-height: 250px;
+  overflow-y: scroll;
+}
